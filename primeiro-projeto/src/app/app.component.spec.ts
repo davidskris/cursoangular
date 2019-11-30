@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'primeiro-projeto'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Meu Primeiro Projeto Angular 2');
+    expect(app.title).toEqual('Meu Primeiro Projeto Angular 2 - Atualizado automaticamente 2a tentativa');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Meu Primeiro Projeto Angular 2 está rodando!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Meu Primeiro Projeto Angular 2 - Atualizado automaticamente 2a tentativa está rodando!');
   });
 });
